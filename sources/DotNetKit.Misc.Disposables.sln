@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetKit.Misc.Disposables", "DotNetKit.Misc.Disposables\DotNetKit.Misc.Disposables.csproj", "{71F87C38-6B52-45DD-8D37-4020C97E03C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetKit.Misc.Disposables.Tests", "DotNetKit.Misc.Disposables.Tests\DotNetKit.Misc.Disposables.Tests.csproj", "{55AD0E6E-8129-417F-B7F0-7154C0D88929}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{71F87C38-6B52-45DD-8D37-4020C97E03C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71F87C38-6B52-45DD-8D37-4020C97E03C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71F87C38-6B52-45DD-8D37-4020C97E03C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71F87C38-6B52-45DD-8D37-4020C97E03C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55AD0E6E-8129-417F-B7F0-7154C0D88929}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55AD0E6E-8129-417F-B7F0-7154C0D88929}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55AD0E6E-8129-417F-B7F0-7154C0D88929}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55AD0E6E-8129-417F-B7F0-7154C0D88929}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
