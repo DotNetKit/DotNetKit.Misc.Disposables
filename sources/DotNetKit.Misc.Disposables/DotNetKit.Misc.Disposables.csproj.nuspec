@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>DotNetKit.Misc.Disposables</id>
+    <version>1.0.0</version>
+    <authors>vain0</authors>
+    <language>en-US</language>
+    <projectUrl>https://github.com/DotNetKit/DotNetKit.Misc.Disposables</projectUrl>
+    <licenseUrl>https://github.com/DotNetKit/DotNetKit.Misc.Disposables/blob/master/LICENSE.md</licenseUrl>
+    <description>
+      Provides IDisposable helpers.
+    </description>
+    <dependencies>
+      <dependency id="System.Collections" version="[4.3.0, 5)" />
+      <dependency id="System.Threading" version="[4.3.0, 5)" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="bin\Release\**" target="lib" />
+  </files>
+</package>
