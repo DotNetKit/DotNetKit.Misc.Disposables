@@ -4,6 +4,7 @@
     <TargetFramework>netstandard1.0</TargetFramework>
     <RootNamespace>DotNetKit</RootNamespace>
     <PostBuildEvent></PostBuildEvent>
+    <NoStandardLibraries>True</NoStandardLibraries>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -11,5 +12,33 @@
     <DebugType>none</DebugType>
     <DebugSymbols>False</DebugSymbols>
   </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netstandard1.0\DotNetKit.Misc.Disposables.XML</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="Misc\Disposables\BooleanDisposables\TupleDisposables.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>TupleDisposables.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Misc\Disposables\BooleanDisposables\TupleDisposables.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>TupleDisposables.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Collections" Version="4.3.0" />
+    <PackageReference Include="System.Threading" Version="4.3.0" />
+  </ItemGroup>
 
 </Project>

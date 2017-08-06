@@ -52,7 +52,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Misc\Disposables\BooleanDisposables\ArrayDisposableTest.cs" />
+    <Compile Include="Misc\Disposables\BooleanDisposables\BooleanDisposableTest.cs" />
+    <Compile Include="Misc\Disposables\BooleanDisposables\BooleanDisposableTestHelper.cs" />
+    <Compile Include="Misc\Disposables\BooleanDisposables\CompositeDisposableTest.cs" />
+    <Compile Include="Misc\Disposables\SensitiveDisposable.cs" />
+    <Compile Include="Misc\Disposables\BooleanDisposables\SerialDisposableTest.cs" />
+    <Compile Include="Misc\Disposables\BooleanDisposables\SingleDisposableTest.cs" />
+    <Compile Include="Misc\Disposables\BooleanDisposables\TupleDisposableTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Xunit\XunitExtension.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DotNetKit.Misc.Disposables\DotNetKit.Misc.Disposables.csproj">
@@ -63,6 +72,7 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>$(SolutionDir)\packages\xunit.runner.console.2.2.0\tools\xunit.console.exe $(TargetPath)
